@@ -43,5 +43,14 @@ public static class ClassExample
     public static void RunClassExample()
     {
         Console.WriteLine("Zaciname Class Example");
+
+        // Vytvor 3 triny auta.
+        // Prvni instance bude Audi o delkce 4.7m a bude to ctyrkolka
+        // Druha instance bude Skoda o delce 5.2m a nebude to ctyrkolka
+        // Treti instance bude nic, jenom prazda instance.
+
+
+        // Vypis detaily audiny pomoci funkce VypisDetailyAuta ve tride Auto a pomoci VypisDetailyAuta z tridy AutoHandler
+
     }
 }
