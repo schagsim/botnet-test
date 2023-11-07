@@ -80,19 +80,21 @@ public static class Kalkulacka
                     {
                         Console.WriteLine("Nelze delit nulout");
                     }
-                    vysledek = vysledek / prevedeneCislo;
+                    vysledek /= prevedeneCislo;
                     break;
                 case "+":
-                    vysledek = vysledek + prevedeneCislo;
+                    vysledek += prevedeneCislo;
                     break;
                 case "-":
-                    vysledek = vysledek - prevedeneCislo;
+                    vysledek -= prevedeneCislo;
                     break;
                 case "ˆ":
+                    double pow_mezivysledek = 1;
                     for (int i = 0; i < (int)prevedeneCislo; i++)
                     {
-                        vysledek = vysledek * prevedeneCislo;
+                        pow_mezivysledek *= nynejsiVstup;
                     }
+                    vysledek = pow_mezivysledek;
                     break;
                 default:
                     Console.WriteLine("Neznamy operand");
